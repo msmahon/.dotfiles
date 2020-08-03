@@ -18,7 +18,7 @@ PROMPT_COMMAND=_PROMPT
 #=========#
 
 # Shortcuts
-alias ll="ls -laG" # -G highlights executables
+alias ll="ls -la"
 
 # Syntax highlight cat
 alias cat="bat"
@@ -31,5 +31,5 @@ alias cat="bat"
 function config { cd ~/.dotfiles/"$1"; }
 
 [[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
-[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+#[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 [[ -f ~/.bashrc_machine ]] && source ~/.bashrc_machine
