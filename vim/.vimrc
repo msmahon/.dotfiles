@@ -48,16 +48,24 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
 Plug 'airblade/vim-gitgutter'
-
 Plug 'mattn/emmet-vim'
+Plug 'mbbill/undotree'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 "----------Mappings---------"
 
-nmap <leader>p :Files<CR>
+cmap Q q
+cmap W w
+cmap wQ wq
+cmap Wq wq
+cmap WQ wq
+nmap <leader>p :Files<cr>
+nmap <leader>u :UndotreeToggle<cr>
 
 "----------Auto-Commands-----"
 
