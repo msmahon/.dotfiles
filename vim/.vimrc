@@ -11,6 +11,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set laststatus=2
+set expandtab
 
 set backupdir=$TMPDIR//
 set directory=$TMPDIR//
@@ -27,8 +28,8 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set timeoutlen=1000 ttimeoutlen=0
 
 "Show hidden characters
-"set list
-"set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+set list
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 
 "set wildignorecase
 "set wildmode=full
@@ -65,11 +66,5 @@ cmap wQ wq
 cmap Wq wq
 cmap WQ wq
 nmap <leader>p :Files<cr>
-nmap <leader>u :UndotreeToggle<cr>
-
-"----------Auto-Commands-----"
-
-"Change cursor on insert mode
-"autocmd InsertEnter * highlight CursorLine cterm=NONE ctermbg=yellow
-"autocmd InsertLeave * highlight CursorLine cterm=NONE ctermbg=darkgrey
+nmap <leader>u :UndotreeToggle <cr> <bar> :UndotreeFocus <cr>
 
