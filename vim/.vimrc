@@ -60,11 +60,11 @@ call plug#end()
 
 "----------Mappings---------"
 
-cmap Q q
-cmap W w
-cmap wQ wq
-cmap Wq wq
-cmap WQ wq
-nmap <leader>p :Files<cr>
-nmap <leader>u :UndotreeToggle <cr> <bar> :UndotreeFocus <cr>
+cnoremap Q q
+cnoremap W w
+cnoremap wQ wq
+cnoremap Wq wq
+cnoremap WQ wq
+nnoremap <leader>p :Files<cr>
+nnoremap <leader>u :UndotreeToggle <cr> <bar> :UndotreeFocus <cr>
 
