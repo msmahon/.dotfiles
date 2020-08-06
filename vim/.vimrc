@@ -30,6 +30,7 @@ set timeoutlen=1000 ttimeoutlen=0
 "Show hidden characters
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+hi SpecialKey ctermfg=grey guifg=grey70
 
 "set wildignorecase
 "set wildmode=full
