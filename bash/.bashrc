@@ -30,6 +30,14 @@ alias cat="bat"
 # Jump to specific dotfiles
 function config { cd ~/.dotfiles/"$1"; }
 
+
+#=====#
+# FZF #
+#=====#
+
 [[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
 #[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
+
+# Source machine-specific bash configs
 [[ -f ~/.bashrc_machine ]] && source ~/.bashrc_machine
