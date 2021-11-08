@@ -16,6 +16,9 @@ set expandtab
 set backupdir=$TMPDIR//
 set directory=$TMPDIR//
 
+"Default clipboard is system clipboard
+set clipboard=unnamed
+
 "Highlight cursorline
 highlight CursorLine cterm=NONE ctermbg=darkgrey
 
@@ -29,8 +32,9 @@ set timeoutlen=1000 ttimeoutlen=0
 
 "Show hidden characters
 set list
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
-hi SpecialKey ctermfg=grey guifg=grey70
+"set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:·,precedes:«,extends:»
+hi SpecialKey ctermfg=DarkGray guifg=DarkGray
 
 "set wildignorecase
 "set wildmode=full
@@ -56,6 +60,7 @@ Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -66,6 +71,8 @@ cnoremap W w
 cnoremap wQ wq
 cnoremap Wq wq
 cnoremap WQ wq
-nnoremap <leader>p :Files<cr>
+nnoremap <leader>p :GFiles<cr>
 nnoremap <leader>u :UndotreeToggle <cr> <bar> :UndotreeFocus <cr>
 
+"----------autocmd----------"
+autocmd BufRead,BufNewFile *.vue setfiletype html
