@@ -50,22 +50,7 @@ let mapleader = ' '                 "Use ' ' instead of '\' as the <Leader>
 syntax on
 filetype indent plugin on
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'mattn/emmet-vim'
-Plug 'mbbill/undotree'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ludovicchabant/vim-gutentags'
-
-call plug#end()
-
 "----------Mappings---------"
-
 cnoremap Q q
 cnoremap W w
 cnoremap wQ wq
