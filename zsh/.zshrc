@@ -26,7 +26,7 @@ alias cat="bat"
 #===========#
 
 # Jump to specific dotfiles
-function config { cd ~/.dotfiles/"$1"; }
+function config { cd ~/Projects/.dotfiles/"$1"; }
 
 #=====#
 # FZF #

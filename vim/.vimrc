@@ -56,8 +56,6 @@ cnoremap W w
 cnoremap wQ wq
 cnoremap Wq wq
 cnoremap WQ wq
-nnoremap <leader>p :GFiles<cr>
-nnoremap <leader>u :UndotreeToggle <cr> <bar> :UndotreeFocus <cr>
 
 "----------autocmd----------"
 autocmd BufRead,BufNewFile *.vue setfiletype html
