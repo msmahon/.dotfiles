@@ -11,28 +11,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 PS1=$'%F{8}%B»%b%f %F{11}%n%f%F{8}╺─╸%f%(?..%F{8}%B[%f%F{9}%L%f%F{8}]%f%b )%F{8}%B[%b%f%F{15}%1~%f%F{8}%B]%f%F{12};%f%b '
 
-#=========#
-# ALIASES #
-#=========#
+#========#
+# SHARED #
+#========#
 
-# Shortcuts
-alias ll="ls -la"
-
-# Syntax highlight cat
-alias cat="bat"
-
-#===========#
-# FUNCTIONS #
-#===========#
-
-# Jump to specific dotfiles
-function config { cd ~/Projects/.dotfiles/"$1"; }
-
-#=====#
-# FZF #
-#=====#
-
-[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+[[ -f ~/.shell_common ]] && source ~/.shell_common
 
 #==================#
 # MACHINE SPECIFIC #

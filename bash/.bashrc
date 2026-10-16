@@ -13,31 +13,11 @@ _PROMPT() {
 
 PROMPT_COMMAND=_PROMPT
 
-#=========#
-# ALIASES #
-#=========#
+#========#
+# SHARED #
+#========#
 
-# Shortcuts
-alias ll="ls -la"
-
-# Syntax highlight cat
-alias cat="bat"
-
-#===========#
-# FUNCTIONS #
-#===========#
-
-# Jump to specific dotfiles
-function config { cd ~/Projects/.dotfiles/"$1"; }
-
-
-#=====#
-# FZF #
-#=====#
-
-[[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
-#[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
-
+[[ -f ~/.shell_common ]] && source ~/.shell_common
 
 # Source machine-specific bash configs
 [[ -f ~/.bashrc_machine ]] && source ~/.bashrc_machine
